@@ -16,7 +16,8 @@ the image service requires a paid plan or card trial.
 - Starlight **0.33 through 0.42**: peer range `@astrojs/starlight >=0.33.0 <0.43.0`.
   0.33 added the editable route `head` this plugin uses. Built and tested with
   Starlight 0.33.0 on Astro 5.18.0 and Starlight 0.42.6 on Astro 7.2.10, on
-  Node.js 22 and 24, with `astro build` and an `astro dev` page check. Releases between
+  Node.js 24, with `astro build` and an `astro dev` page check. A default build on
+  Node.js 22 produced identical image tags. Releases between
   those were not each tested. Starlight is pre-1.0, so a new minor needs its own
   check before the range is widened.
 - Astro's `site` set to your public HTTPS origin. Without it Starlight emits no
