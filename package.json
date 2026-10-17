@@ -1,0 +1,60 @@
+{
+  "name": "starlight-myog",
+  "version": "0.1.0",
+  "description": "Starlight plugin that adds a MyOG.social og:image and twitter:image to every docs page, generated from each page's URL",
+  "keywords": [
+    "withastro",
+    "starlight",
+    "starlight-plugin",
+    "astro",
+    "open-graph",
+    "og-image",
+    "twitter-card",
+    "social-card"
+  ],
+  "homepage": "https://myog.social/docs/starlight",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MyOG-social/starlight-myog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MyOG-social/starlight-myog/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    },
+    "./route-middleware": {
+      "types": "./lib/routeMiddleware.d.ts",
+      "import": "./lib/routeMiddleware.js"
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "peerDependencies": {
+    "@astrojs/starlight": ">=0.33.0 <0.43.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "bun run build",
+    "type-check": "tsc --noEmit",
+    "test": "bun test tests",
+    "lint": "biome lint src tests",
+    "format": "prettier --write"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.14",
+    "@types/bun": "1.2.16",
+    "@types/node": "24.0.0",
+    "prettier": "3.7.4",
+    "typescript": "5.9.3"
+  }
+}

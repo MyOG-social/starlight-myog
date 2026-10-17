@@ -1,0 +1,4 @@
+lib/
+node_modules/
+# No lockfile is committed; devDependencies are pinned exactly instead.
+pnpm-lock.yaml
