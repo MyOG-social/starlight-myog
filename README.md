@@ -63,9 +63,10 @@ canonical link.
 
 ## Check a deployed page
 
-After deploying, paste a public page URL into MyOG's free
+After deploying, paste a public page URL into MyOG's
 [Open Graph Checker](https://myog.social/tools/og-preview) and confirm the image
-loads. The build output shows the tags, not whether MyOG serves the image.
+loads. You get one check without an account; more checks need a MyOG
+subscription. The build output shows the tags, not whether MyOG serves the image.
 
 If the image doesn't load, check your MyOG account:
 
